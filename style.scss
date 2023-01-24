@@ -18,17 +18,55 @@ body{
             font-size: 28px;
             margin-left: 5px;
             margin-top: 8px;
+            cursor: pointer;
+            &:focus{
+                background-color: rgb(46, 46, 46);
+                border-radius: 100%;
+                .menu{
+                    display: block;
+                }
+            }
+            .menu{
+                scroll-behavior: auto;
+                background-color:  rgb(22, 22, 22);
+                color: rgb(255, 255, 255);
+                display: none;
+                position: relative;
+                width: 210px;
+                height: 600px;
+                right: 44px;
+                text-align: left;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    grid-auto-rows: repeat(20,1fr);
+                    h4{
+                        margin-bottom: 13px;
+                    }
+                    a{
+                        padding: 9px 24px 9px 4px;
+                        &:hover{
+                            background-color: rgb(37, 37, 37);
+                            width: 100%;
+                            border-radius: 2px;
+                        }
+                    }
+                }
+            }
         }
         h2{
-            font-size: 29px;
+            font-size: 32px;
             margin: 0px 475px 0px 0px;
         }
         ul{
             display: flex;
             justify-content: space-around;
             width: 45%;
-            font-size: 19px;
+            font-size:19px;
             color: white;
+            cursor: pointer;
             a{
                 &:hover{
                     transform: scale(1.1);
@@ -56,8 +94,8 @@ body{
             //opacity: 0.9;
             margin: auto;
             img{
-                width: 100px;
-                height: 150px;
+                width: 102px;
+                height: 152px;
                 //opacity: 0.4;
                 
             }
@@ -67,6 +105,7 @@ body{
                 &:hover{
                     .modal{
                         display: block;
+                        position: relative;
                     }
                 }
                 .modal{
