@@ -1,7 +1,9 @@
+@charset "UTF-8";
 body {
   background-color: rgb(0, 0, 0);
-  color: yellow;
+  color: #ffff00;
   margin: 0px;
+  font-family: "Times New Roman", Times, serif;
 }
 body header {
   display: flex;
@@ -58,7 +60,7 @@ body header button .menu ul a:hover {
   border-radius: 2px;
 }
 body header h2 {
-  font-size: 32px;
+  font-size: 34px;
   margin: 0px 475px 0px 0px;
 }
 body header ul {
@@ -79,29 +81,171 @@ body .padre {
   padding: 20px;
   color: rgba(5, 204, 180, 0.4);
 }
+body .padre .titulo {
+  color: white;
+  font-size: 18px;
+  margin: 8px 0px 10px 56px;
+}
 body .padre .container {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 20px;
+  grid-template-rows: repeat(1, 1fr);
+  -moz-column-gap: 34px;
+       column-gap: 34px;
   width: 90%;
   margin: auto;
-}
-body .padre .container img {
-  width: 102px;
-  height: 152px;
 }
 body .padre .container .movie1 {
   background-color: black;
   display: flex;
 }
-body .padre .container .movie1:hover .modal {
+body .padre .container .movie1 img {
+  width: 102px;
+  height: 152px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+body .padre .container .movie1 .descripcion {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  text-align: center;
+  width: 102px;
+  height: 152px;
+  padding: 0px;
+  color: rgba(255, 255, 255, 0);
+}
+body .padre .container .movie1 .descripcion:focus .modal {
   display: block;
   position: relative;
 }
-body .padre .container .movie1 .modal {
+body .padre .container .movie1 .descripcion .modal {
+  background-image: url(./img/sueño\ decrip.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  color: white;
+  display: none;
+  position: relative;
+  width: 263px;
+  height: 188px;
+  border: solid 1px rgba(255, 255, 255, 0.139);
+  border-radius: 8px;
+  bottom: 19px;
+  text-align: left;
+  left: 110px;
+}
+body .padre .container .movie1 .descripcion .modal span {
+  background-color: rgba(97, 97, 97, 0.301);
+  display: block;
+  padding: 3px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 7px;
+  font-size: 15px;
+  padding-left: 2px;
+}
+body .padre .container .movie1 .descripcion .modal b {
+  background-color: rgba(97, 97, 97, 0.301);
+  display: block;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-left: 2px;
+}
+body .padre .container .movie1 .descripcion .modal p {
+  background-color: rgba(97, 97, 97, 0.301);
+  padding-top: 1px;
+  margin: 0px;
+  padding-left: 2px;
+}
+body .padre .container .movie1 .descripcion .modal .pulgar {
+  color: white;
+  text-decoration: none;
+  font-size: 38px;
+  margin: 10px;
+  margin: 10px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background-color: rgba(71, 71, 71, 0.381);
+  position: static;
+  padding: 0px 5px 0px 5px;
+}
+body .padre .container .movie1 .descripcion .modal .play {
+  background-color: rgba(71, 71, 71, 0.381);
+  border-radius: 100%;
+  border: 1px solid white;
+  text-decoration: none;
+  font-size: 38px;
+  margin-left: 25px;
+  color: white;
+  padding: 0px 4px 0px 4px;
+}
+body .padre .titulo {
+  color: white;
+  font-size: 18px;
+  margin: 8px 0px 10px 56px;
+}
+body .padre .container2 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+  width: 90%;
+  margin: auto;
+}
+body .padre .container2 img {
+  width: 102px;
+  height: 152px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+body .padre .container2 .movie1 {
+  background-color: black;
+  display: flex;
+}
+body .padre .container2 .movie1:focus .modal {
+  display: block;
+  position: relative;
+}
+body .padre .container2 .movie1 .modal {
+  background-color: rgb(109, 109, 109);
+  color: black;
+  display: none;
+  position: absolute;
+  width: 220px;
+  height: 130px;
+  border: solid 1px yellow;
+  border-radius: 8px;
+}
+body .padre .titulo {
+  color: white;
+  font-size: 18px;
+  margin: 8px 0px 10px 56px;
+}
+body .padre .container3 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  -moz-column-gap: 34px;
+       column-gap: 34px;
+  width: 90%;
+  margin: auto;
+}
+body .padre .container3 img {
+  width: 102px;
+  height: 152px;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+body .padre .container3 .movie1 {
+  background-color: black;
+  display: flex;
+}
+body .padre .container3 .movie1:focus .modal {
+  display: block;
+  position: relative;
+}
+body .padre .container3 .movie1 .modal {
   background-color: rgb(109, 109, 109);
   color: black;
   display: none;
