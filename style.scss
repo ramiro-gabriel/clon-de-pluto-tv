@@ -16,8 +16,12 @@ body{
         width: 8px;
     }
     .menu::-webkit-scrollbar-thumb{
-        background-color: rgba(92, 0, 0, 0.621);
+        background-color: rgba(92, 0, 0, 0);
         border-radius: 50px;
+    }
+
+    .menu::-webkit-scrollbar-thumb:hover{
+        background-color: rgba(92, 0, 0, 0.621);
     }
     font-family: 'Times New Roman', Times, serif;
     header{
@@ -87,7 +91,7 @@ body{
         ul{
             display: flex;
             justify-content: space-around;
-            width: 45%;
+            width: 50%;
             cursor: pointer;
             a{
                 color: white;
